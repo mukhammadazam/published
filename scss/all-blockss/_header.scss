@@ -1,0 +1,60 @@
+header {
+    background-image: url(../../imges/image20.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding-bottom: 170px;
+    height: 100vh;
+}
+
+nav {
+    background-image: url(../../imges/Rectangle66.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 0;
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 46px;
+    }
+    .item__link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18.1289px;
+        line-height: 129.19%;
+        text-align: center;
+        color: $white-color;
+        opacity: 0.5;
+    }
+    &__link {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18.1289px;
+        line-height: 129.19%;
+        text-align: right;
+        color: $white-color;
+    }
+}
+
+.hero {
+    &__title {
+        max-width: 1071px;
+        width: 100%;
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45.3221px;
+        line-height: 129.19%;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 162px;
+        padding-bottom: 33px;
+    }
+}
