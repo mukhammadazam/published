@@ -215,19 +215,28 @@
         .setion-site {
             background-color: #312e2e;
             position: relative;
+            height: 100vh;
         }
         
         .setion {
             object-fit: cover;
             width: 100%;
             opacity: 1;
+            height: 100vh;
         }
         
         .hero-site {
+            @include flexfuntion(row, center, space-between);
             padding-top: 100px;
             position: absolute;
             top: 0;
+            &__mato1 {
+                display: none;
+            }
             &__left {
+                background: rgba(17, 16, 16, 0.5);
+                padding: 40px 50px;
+                border-radius: 25px;
                 &--title {
                     max-width: 600px;
                     width: 100%;
@@ -241,7 +250,7 @@
                 .site-p {
                     display: flex;
                     align-items: center;
-                    padding-bottom: 30px;
+                    padding-bottom: 35px;
                 }
                 &--leni {
                     display: block;
@@ -258,6 +267,127 @@
                     font-size: 16px;
                     line-height: 20px;
                     color: $white-color;
+                }
+                &--btn {
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
+                    border-radius: 20px;
+                    border: none;
+                    margin-left: 20px;
+                    font-style: normal;
+                    padding: 14px 20px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 157.4%;
+                    text-align: center;
+                    color: #FFFFFF;
+                    &:hover {
+                        transform: rotate(360deg);
+                        transition: all 2s ease;
+                        background: transparent;
+                        color: $white-color;
+                        border-radius: 20px;
+                    }
+                }
+                &--btn1 {
+                    padding: 14px 20px;
+                    border: none;
+                    background: transparent;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 157.4%;
+                    text-align: center;
+                    color: #FFFFFF;
+                    &:hover {
+                        transform: rotate(360deg);
+                        transition: all 2s ease;
+                        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
+                        color: $white-color;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+        
+        @media screen and (max-width:576px) {
+            .setion-site {
+                top: -50px;
+            }
+            .hero-site {
+                @include flexfuntion(column, center, space-between);
+                padding-top: 50px;
+                padding-bottom: 31px;
+                position: absolute;
+                max-width: 375px;
+                width: 100%;
+                margin: 0 auto;
+                &__left {
+                    background: transparent;
+                    padding: 0;
+                    border-radius: 25px;
+                    &--title {
+                        max-width: 300px;
+                        margin: 0 auto;
+                        text-align: center;
+                        width: 100%;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: $white-color;
+                        padding-bottom: 32px;
+                    }
+                    .site-p {
+                        display: flex;
+                        align-items: center;
+                        padding-bottom: 25px;
+                    }
+                    &--leni {
+                        display: block;
+                        width: 9px;
+                        height: 9px;
+                        border-radius: 50%;
+                        background: #00BF63;
+                        margin-right: 32px;
+                    }
+                    &--text1 {
+                        max-width: 300px;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $white-color;
+                    }
+                    &--btn {
+                        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
+                        border-radius: 20px;
+                        border: none;
+                        margin-left: 20px;
+                        font-style: normal;
+                        padding: 14px 20px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 157.4%;
+                        text-align: center;
+                        color: #FFFFFF;
+                        &:hover {
+                            transform: rotate(360deg);
+                            transition: all 2s ease;
+                            background: transparent;
+                            color: $white-color;
+                            border-radius: 20px;
+                        }
+                    }
+                    &--btn1 {
+                        display: none;
+                    }
+                }
+                &__mato {
+                    display: none;
+                }
+                &__mato1 {
+                    display: block;
+                    padding-bottom: 69px;
                 }
             }
         }
