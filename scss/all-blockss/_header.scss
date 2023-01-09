@@ -211,3 +211,53 @@
                 }
             }
         }
+        
+        .setion-site {
+            background-color: #312e2e;
+            position: relative;
+        }
+        
+        .setion {
+            object-fit: cover;
+            width: 100%;
+            opacity: 1;
+        }
+        
+        .hero-site {
+            padding-top: 100px;
+            position: absolute;
+            top: 0;
+            &__left {
+                &--title {
+                    max-width: 600px;
+                    width: 100%;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 26px;
+                    line-height: 31px;
+                    color: $white-color;
+                    padding-bottom: 32px;
+                }
+                .site-p {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 30px;
+                }
+                &--leni {
+                    display: block;
+                    width: 19px;
+                    height: 19px;
+                    border-radius: 50%;
+                    background: #00BF63;
+                    margin-right: 32px;
+                }
+                &--text1 {
+                    max-width: 520px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $white-color;
+                }
+            }
+        }
