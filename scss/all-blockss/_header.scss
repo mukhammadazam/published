@@ -489,7 +489,7 @@
                         }
                         
                         .section3 {
-                            background-color: rgb(4, 4, 4, 0.4);
+                            background-color: rgb(4, 4, 4, 0.1);
                             padding-bottom: 270px;
                         }
                         
@@ -507,7 +507,7 @@
                             select {
                                 max-width: 1000px;
                                 width: 100%;
-                                padding-left: 210px;
+                                padding: 0 20px;
                                 font-style: normal;
                                 font-weight: 700;
                                 font-size: 26px;
@@ -565,5 +565,85 @@
                                 line-height: 31px;
                                 color: #FFFFFF;
                                 padding-bottom: 40px;
+                            }
+                        }
+                        
+                        @media screen and (max-width:576px) {
+                            .sectioon3 {
+                                background-image: url(../../imges/5-blok-bgraund.png);
+                                background-repeat: no-repeat;
+                                background-size: 100%;
+                            }
+                            .section3 {
+                                background-color: rgb(4, 4, 4, 0.4);
+                                padding-bottom: 270px;
+                            }
+                            .select-site {
+                                &__title {
+                                    padding-top: 69px;
+                                    padding-bottom: 44px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 45px;
+                                    line-height: 129.19%;
+                                    text-align: center;
+                                    color: #FFFFFF;
+                                }
+                                select {
+                                    max-width: 500px;
+                                    width: 100%;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 10px;
+                                    line-height: 31px;
+                                    color: #E9BC47;
+                                    outline: none;
+                                    background: transparent;
+                                    border: none;
+                                }
+                                &__s1 {
+                                    border-radius: 20px;
+                                    padding: 20px 0;
+                                }
+                                &__text {
+                                    padding-bottom: 41px;
+                                    text-align: center;
+                                    padding-top: 25px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 10px;
+                                    line-height: 24px;
+                                    color: #FFFFFF;
+                                }
+                                .slelt {
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 10px;
+                                    line-height: 10px;
+                                    color: #FFFFFF;
+                                    padding-bottom: 40px;
+                                    background-color: rgb(34, 33, 33, 0.01);
+                                    border-radius: 10px;
+                                }
+                                .slect1 {
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 10px;
+                                    line-height: 31px;
+                                    color: #FFFFFF;
+                                    background-color: rgb(34, 33, 33, 0.01);
+                                    border-radius: 10px;
+                                    padding-bottom: 40px;
+                                }
+                                .slect2 {
+                                    background-color: rgb(34, 33, 33, 0.01);
+                                    border-radius: 10px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 10px;
+                                    line-height: 31px;
+                                    color: #FFFFFF;
+                                    padding-bottom: 40px;
+                                }
                             }
                         }
