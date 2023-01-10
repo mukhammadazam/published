@@ -523,4 +523,87 @@ input {
     color: #FFFFFF;
     padding-bottom: 10px;
   }
+}
+.sectioon3 {
+  background-image: url(../../imges/5-blok-bgraund.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.section3 {
+  background-color: rgba(4, 4, 4, 0.4);
+  padding-bottom: 270px;
+}
+
+.select-site__title {
+  padding-top: 69px;
+  padding-bottom: 44px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 129.19%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.select-site select {
+  max-width: 1000px;
+  width: 100%;
+  padding-left: 210px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: #E9BC47;
+  outline: none;
+  background: transparent;
+  border: none;
+}
+.select-site__s1 {
+  background-color: rgba(34, 33, 33, 0.1);
+  border-radius: 20px;
+  padding: 20px 0;
+}
+.select-site__text {
+  padding-bottom: 41px;
+  text-align: center;
+  padding-top: 25px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.select-site__s2 {
+  background-color: rgba(34, 33, 33, 0.2);
+  border-radius: 20px;
+}
+.select-site .slelt {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: #FFFFFF;
+  padding-bottom: 40px;
+  background-color: rgba(34, 33, 33, 0.01);
+  border-radius: 10px;
+}
+.select-site .slect1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: #FFFFFF;
+  background-color: rgba(34, 33, 33, 0.01);
+  border-radius: 10px;
+  padding-bottom: 40px;
+}
+.select-site .slect2 {
+  background-color: rgba(34, 33, 33, 0.01);
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: #FFFFFF;
+  padding-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */
