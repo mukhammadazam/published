@@ -92,8 +92,6 @@ input {
     background-image: url(../../imges/mobelniybcrounf=d.png);
     background-repeat: no-repeat;
     padding: 0;
-    position: relative;
-    top: 40px;
   }
   nav {
     background-image: url(../../imges/headermobeli.png);
@@ -470,6 +468,9 @@ input {
   background-color: rgb(0, 0, 0);
 }
 
+.hero12 {
+  padding-bottom: 100px;
+}
 .hero12__title {
   padding-top: 50px;
   padding-bottom: 25px;
@@ -515,6 +516,9 @@ input {
     background-image: url(../../imges/mobayil.png);
     background-repeat: no-repeat;
     background-color: rgba(45, 36, 36, 0);
+  }
+  .hero12 {
+    padding-bottom: 0;
   }
   .hero12__title {
     padding-bottom: 5px;
@@ -646,6 +650,7 @@ input {
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.9);
   padding-bottom: 111px;
+  background-size: 100%;
 }
 
 .nashi {
