@@ -778,5 +778,54 @@
                         }
                         
                         footer {
+                            position: relative;
+                            top: 300px;
                             background-color: $black-color;
+                        }
+                        
+                        .footer {
+                            padding-top: 46px;
+                            @include flexfuntion(row, center, space-between);
+                            &__list {
+                                gap: 30px;
+                                @include flexfuntion(row, center, center);
+                                padding-bottom: 47px;
+                                &--item a {
+                                    font-weight: 600;
+                                    font-size: 18.1289px;
+                                    line-height: 129.19%;
+                                    color: #FFFFFF;
+                                    opacity: 0.6;
+                                }
+                            }
+                            &__logo {
+                                padding-bottom: 47px;
+                            }
+                        }
+                        
+                        .foter {
+                            @include flexfuntion(row, center, space-between);
+                            .foter__list {
+                                padding-bottom: 52px;
+                                gap: 19px;
+                                @include flexfuntion(row, center, center);
+                                &--item-a {
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #FFFFFF;
+                                    opacity: 0.4;
+                                }
+                            }
+                            .ul-list {
+                                @include flexfuntion(row, center, center);
+                                &__item {
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #FFFFFF;
+                                    padding-left: 30px;
+                                    opacity: 0.4;
+                                }
+                            }
                         }

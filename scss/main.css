@@ -829,5 +829,74 @@ input {
   }
 }
 footer {
+  position: relative;
+  top: 300px;
   background-color: #000;
+}
+
+.footer {
+  padding-top: 46px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer__list {
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 47px;
+}
+.footer__list--item a {
+  font-weight: 600;
+  font-size: 18.1289px;
+  line-height: 129.19%;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+.footer__logo {
+  padding-bottom: 47px;
+}
+
+.foter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.foter .foter__list {
+  padding-bottom: 52px;
+  gap: 19px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.foter .foter__list--item-a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  opacity: 0.4;
+}
+.foter .ul-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.foter .ul-list__item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding-left: 30px;
+  opacity: 0.4;
 }/*# sourceMappingURL=main.css.map */
