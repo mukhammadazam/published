@@ -454,6 +454,7 @@
                             &__1 {
                                 background-color: rgb(4, 4, 4, 0.3);
                                 border-radius: 20px;
+                                padding: 20px 0;
                             }
                             &__1--list {
                                 @include flexfuntion(row, center, space-around);
@@ -490,6 +491,7 @@
                                     font-size: 25px;
                                 }
                                 &__1 {
+                                    padding: 0;
                                     background-color: rgb(4, 4, 4, 0);
                                     border-radius: 20px;
                                     display: flex;
@@ -730,14 +732,16 @@
                             .nashin1 {
                                 background-image: url(../../imges/footerdaoldingimobylbg.png);
                                 background-repeat: no-repeat;
+                                position: relative;
+                                bottom: 50px;
                             }
                             .nashi {
                                 padding-top: 44px;
-                                @include flexfuntion(column, center, center);
+                                @include flexfuntion(column, flex-start, center);
                                 &__title {
                                     font-style: normal;
                                     font-weight: 700;
-                                    font-size: 45px;
+                                    font-size: 25px;
                                     line-height: 54px;
                                     color: #FFFFFF;
                                     text-align: center;
@@ -757,13 +761,13 @@
                                     }
                                 }
                                 .nashi__list--item {
-                                    padding-left: 30px;
+                                    max-width: 250px;
                                 }
                             }
                             .nashi1 {
-                                padding-top: 82px;
+                                padding-top: 50px;
                                 &__list {
-                                    @include flexfuntion(column, center, center);
+                                    @include flexfuntion(column, flex-start, center);
                                     gap: 20px;
                                     &--item a {
                                         font-style: normal;
@@ -809,13 +813,13 @@
                                 padding-bottom: 52px;
                                 gap: 19px;
                                 @include flexfuntion(row, center, center);
-                                &--item-a {
-                                    font-weight: 600;
-                                    font-size: 16px;
-                                    line-height: 19px;
-                                    color: #FFFFFF;
-                                    opacity: 0.4;
-                                }
+                            }
+                            &__list--item-a a {
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #FFFFFF;
+                                opacity: 0.4;
                             }
                             .ul-list {
                                 @include flexfuntion(row, center, center);
@@ -826,6 +830,45 @@
                                     color: #FFFFFF;
                                     padding-left: 30px;
                                     opacity: 0.4;
+                                }
+                            }
+                        }
+                        
+                        @media screen and (max-width:576px) {
+                            footer {
+                                bottom: 350px;
+                            }
+                            .footer {
+                                &__list {
+                                    display: none;
+                                }
+                            }
+                            .foter {
+                                @include flexfuntion( column-reverse, flex-start, start);
+                                .foter__list {
+                                    padding-bottom: 52px;
+                                    gap: 19px;
+                                    @include flexfuntion(row, flex-start, start);
+                                    &--item-a {
+                                        font-weight: 600;
+                                        font-size: 16px;
+                                        line-height: 19px;
+                                        color: #FFFFFF;
+                                        opacity: 0.4;
+                                    }
+                                }
+                                .ul-list {
+                                    @include flexfuntion(column, flex-start, start);
+                                    padding-bottom: 33px;
+                                    &__item {
+                                        padding-bottom: 8px;
+                                        font-weight: 600;
+                                        font-size: 16px;
+                                        line-height: 19px;
+                                        color: #FFFFFF;
+                                        padding-left: 30px;
+                                        opacity: 0.4;
+                                    }
                                 }
                             }
                         }

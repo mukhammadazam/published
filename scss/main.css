@@ -484,6 +484,7 @@ input {
 .hero12__1 {
   background-color: rgba(4, 4, 4, 0.3);
   border-radius: 20px;
+  padding: 20px 0;
 }
 .hero12__1--list {
   display: flex;
@@ -528,6 +529,7 @@ input {
     font-size: 25px;
   }
   .hero12__1 {
+    padding: 0;
     background-color: rgba(4, 4, 4, 0);
     border-radius: 20px;
     display: flex;
@@ -776,19 +778,21 @@ input {
   .nashin1 {
     background-image: url(../../imges/footerdaoldingimobylbg.png);
     background-repeat: no-repeat;
+    position: relative;
+    bottom: 50px;
   }
   .nashi {
     padding-top: 44px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
   }
   .nashi__title {
     font-style: normal;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 25px;
     line-height: 54px;
     color: #FFFFFF;
     text-align: center;
@@ -806,15 +810,15 @@ input {
     padding-top: 15px;
   }
   .nashi .nashi__list--item {
-    padding-left: 30px;
+    max-width: 250px;
   }
   .nashi1 {
-    padding-top: 82px;
+    padding-top: 50px;
   }
   .nashi1__list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -878,7 +882,7 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
 }
-.foter .foter__list--item-a {
+.foter__list--item-a a {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
@@ -899,4 +903,53 @@ footer {
   color: #FFFFFF;
   padding-left: 30px;
   opacity: 0.4;
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    bottom: 350px;
+  }
+  .footer__list {
+    display: none;
+  }
+  .foter {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  .foter .foter__list {
+    padding-bottom: 52px;
+    gap: 19px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  .foter .foter__list--item-a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.4;
+  }
+  .foter .ul-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding-bottom: 33px;
+  }
+  .foter .ul-list__item {
+    padding-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding-left: 30px;
+    opacity: 0.4;
+  }
 }/*# sourceMappingURL=main.css.map */
