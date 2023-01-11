@@ -91,7 +91,9 @@ input {
   header {
     background-image: url(../../imges/mobelniybcrounf=d.png);
     background-repeat: no-repeat;
-    height: 100vh;
+    padding: 0;
+    position: relative;
+    top: 40px;
   }
   nav {
     background-image: url(../../imges/headermobeli.png);
@@ -150,7 +152,7 @@ input {
   line-height: 129.19%;
   text-align: center;
   color: #FFFFFF;
-  padding-top: 162px;
+  padding-top: 160px;
   padding-bottom: 33px;
 }
 .hero__btn {
@@ -172,7 +174,6 @@ input {
 }
 .hero .bnt {
   text-align: center;
-  padding-bottom: 260px;
 }
 .hero__btn1 {
   padding: 17px 30px;
@@ -201,8 +202,9 @@ input {
 }
 .hero__chat {
   position: absolute;
-  bottom: 80px;
+  bottom: -100px;
   right: 60px;
+  width: 83px;
 }
 .hero iframe {
   max-width: 450px;
@@ -211,20 +213,63 @@ input {
   border-radius: 10px;
   position: absolute;
   left: -80px;
-  bottom: 0px;
+  bottom: -250px;
 }
 
 @media screen and (max-width: 576px) {
+  header {
+    padding-bottom: 0px;
+  }
+  .hero {
+    position: relative;
+  }
+  .hero__title {
+    max-width: 1071px;
+    width: 100%;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25.3221px;
+    line-height: 129.19%;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 160px;
+  }
+  .hero__btn {
+    padding: 13px 11px;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.1289px;
+    line-height: 22px;
+    text-align: center;
+    color: #000;
+  }
+  .hero__btn:hover {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: all 2s ease;
+  }
+  .hero .bnt {
+    text-align: center;
+  }
   .hero__btn1 {
+    padding: 13px 11px;
     display: none;
+  }
+  .hero__btn1:hover {
+    transform: rotate(360deg);
+    transition: all 2s ease;
+    background: #fff;
+    color: #000;
   }
   .hero__chat {
     position: absolute;
-    bottom: 60px;
-    right: 0px;
-  }
-  .hero .bnt {
-    padding-bottom: 160px;
+    bottom: -100px;
+    right: 60px;
+    width: 43px;
   }
   .hero iframe {
     display: none;
@@ -333,9 +378,6 @@ input {
 }
 
 @media screen and (max-width: 576px) {
-  .setion-site {
-    top: -50px;
-  }
   .hero-site {
     display: flex;
     flex-direction: column;
@@ -343,7 +385,6 @@ input {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 50px;
-    padding-bottom: 31px;
     position: absolute;
     max-width: 375px;
     width: 100%;
@@ -415,7 +456,6 @@ input {
   }
   .hero-site__mato1 {
     display: block;
-    padding-bottom: 69px;
   }
 }
 .section2 {
@@ -430,11 +470,8 @@ input {
   background-color: rgb(0, 0, 0);
 }
 
-.hero12 {
-  padding-bottom: 60px;
-}
 .hero12__title {
-  padding-top: 66px;
+  padding-top: 50px;
   padding-bottom: 25px;
   font-style: normal;
   font-weight: 700;
@@ -453,7 +490,6 @@ input {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 46px;
 }
 .hero12__1-list--item {
   display: flex;
@@ -479,10 +515,6 @@ input {
     background-image: url(../../imges/mobayil.png);
     background-repeat: no-repeat;
     background-color: rgba(45, 36, 36, 0);
-  }
-  .hero12 {
-    padding-bottom: 50px;
-    padding: 100px 0;
   }
   .hero12__title {
     padding-bottom: 5px;
@@ -735,5 +767,59 @@ input {
     line-height: 31px;
     color: #FFFFFF;
     padding-bottom: 40px;
+  }
+  .nashin1 {
+    background-image: url(../../imges/footerdaoldingimobylbg.png);
+    background-repeat: no-repeat;
+  }
+  .nashi {
+    padding-top: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .nashi__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .nashi__logo {
+    display: none;
+  }
+  .nashi__list--item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.4;
+    padding-top: 15px;
+  }
+  .nashi .nashi__list--item {
+    padding-left: 30px;
+  }
+  .nashi1 {
+    padding-top: 82px;
+  }
+  .nashi1__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .nashi1__list--item a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0.4;
+    color: #FFFFFF;
   }
 }/*# sourceMappingURL=main.css.map */
